@@ -20,5 +20,6 @@ public:
 	fecha(int dia, int mes, int anio);
 	fecha();
 
+	void agregarDias(int diasMasOmenos);
 };
 

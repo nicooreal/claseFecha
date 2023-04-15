@@ -1,4 +1,6 @@
+#include <iostream>;
 #include "fecha.h"
+using namespace std;
 
 int fecha::getAnio() {
 	return _anio;
@@ -61,4 +63,23 @@ fecha::fecha() {
 	_mes = 1;
 	_anio = 2023;
 
+}
+
+void fecha::agregarDias(int diasMasOmenos) {
+
+/*Hacer un método público llamado AgregarDias que reciba un entero con la cantidad de días a agregar.
+El mismo debe añadir la cantidad de días recibidos como parámetro si el mismo es positivo o restarlos si valor del parámetro en negativo. En caso de ser cero no se debe modificar el estado del objeto.*/
+
+
+	if ((getDia() + diasMasOmenos) > 31 || getDia() + diasMasOmenos < 1) { cout << "no se pueden cambiar los dias" << endl; }
+	// tambien en vez de poner getDia puedo poner _ dia
+	else 
+	
+	
+	{
+
+
+		setDia(getDia() + diasMasOmenos);
+
+	}
 }

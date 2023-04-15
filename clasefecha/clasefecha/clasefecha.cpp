@@ -7,19 +7,35 @@ int main()
 {
 	//fecha fecha;
 	//cout <<  fecha.getMes();
-	
-	int dia, mes, anio;
+	int dia, mes, anio,masDias;
 	
 	cout << "ingrese dia, mes y anio" << endl;
-	cin >> dia >> mes >> anio;
-
-	
-
-
-
+	cin >> dia;
+	cin >> mes;
+	cin >> anio;
 	fecha fec(dia,mes,anio);
-    cout <<fec.getAnio() << endl;
+
 	
 
+
+
+    
+	
+	cout << "los dias son: " << endl;
+
+	cout << fec.getDia() << endl;
+	cout << fec.getMes() << endl;
+	cout <<fec.getAnio() << endl;
+	
+
+	cout << "ingrese los dias para sumar: " << endl;
+	cin >> masDias;
+
+	fec.agregarDias(masDias);
+
+
+
+
+	cout << fec.getDia() << endl;
 }
 
